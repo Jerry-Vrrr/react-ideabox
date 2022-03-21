@@ -1,27 +1,19 @@
 import React, { Component } from 'react';
-
+import Form from './form'
 class App extends Component {
   constructor() {
     super();
+
   }
 
   render() {
     return (
       <main>
       <h1>IdeaBox</h1>
-      <p>Hi!</p>
-      <form>
-  <label>
-    Title:
-    <input type="text" name="name" />
-  </label>
-  <label>
-    Description:
-    <input type="text" name="name" />
-  </label>
-  <input type="submit" value="Submit" />
-</form>
+      <p>Tell Us Your Ideas!</p>
+      <Form/>
             </main>
+
     )
   }
 }

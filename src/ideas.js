@@ -2,14 +2,26 @@ import React, { Component } from 'react';
 import "./ideas.css"
 import Card from './Card'
 
-const Idea = () => {
+
+
+const Ideas = ( {ideas} ) => {
+
+  const ideaCards = ideas.map(idea => {
+    return (
+      <Card
+        title={idea.title}
+        description={idea.description}
+        id={idea.id}
+        key={idea.id}
+      />
+    )
+  })
+
   return (
-    <section className ='card-section'>
-      <Card/>
-      <Card/>
-      <Card/>
-    </section>
+    <div className='card-section'>
+      {ideaCards}
+    </div>
   )
 }
 
-export default Idea;
+export default Ideas;

@@ -8,7 +8,7 @@ const Ideas = ( {ideas} ) => {
 
   const ideaCards = ideas.map(idea => {
     return (
-      <Card className ='card-section'
+      <Card
         title={idea.title}
         description={idea.description}
         id={idea.id}
@@ -18,7 +18,7 @@ const Ideas = ( {ideas} ) => {
   })
 
   return (
-    <div className='ideas-container'>
+    <div className='card-section'>
       {ideaCards}
     </div>
   )
